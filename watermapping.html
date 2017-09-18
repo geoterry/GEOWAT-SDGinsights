@@ -1,35 +1,149 @@
 <html>
-<head>
-<title>GEOWATER - Water Mapping</title>
-</head>
-<body bgcolor="#9dc0f9">
-<center>
-<table width="875" align="left" cellpadding="0" cellspacing="0">
-<tr>
-<td>
-<img src="https://s20.postimg.org/bbduetn0t/banner.png" alt="GEOWATER" width=1360 height=165 align="left" cellpadding="0" cellspacing="0">
-</td>
-</tr>
-</table>
-<br>
-<table width="875" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<font face="calibri" size="5" color="#f7f036">
-<a href="index.html">Home</a> | <a href="about.html">About</a> |  <a href="watermapping.html">Water Mapping</a> | <a href="inequality.html">Inequality</a> | <a href="data.html">Data</a> | <a href="downloads.html">Downloads</a> | <a href="contact.html">Contact</a>
-</font>
-</td>
-</tr>
-</table>
-<br>
-<table width="875" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<h1 align="left">
-<font face="calibri" size="5" color="#ffffff">
-<B>Combining water point data and machine learning to predict the potential geographic distribution of disadvantaged drinking-water access.</B>
-</h1>
-<body align="left">
-  Although SDG monitoring on drinking-water progress is often based on national level indicators, sub-nationally and geospatially disaggregated indicators may become increasingly important as they could effectively reveal inequalities in services between different geographic locations and population groups. As more recent concerns are raised about issues such as water quality, functionality of facility, and continuity of service, it may also become increasingly important to disaggregate data by specific type of water service. As more geospatial data sources become available with the transition from the MDGs to the SDGs, predicting the potential spatial distribution of specific type(s) of drinking-water source using machine learning method becomes possible. DHS modelled surfaces as one of such novel data could potentially be the important sources of predictive covariates in modelling the potential distribution of specific type(s) of drinking-water access or service. 
-</body>
-
+  <head>
+    <title>GEOWATER - Inequality</title>
+  </head>
+  <body bgcolor="#9dc0f9">
+  <center>
+  <table width="1280" align="left" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <img src="https://s20.postimg.org/bbduetn0t/banner.png" alt="GEOWATER" width=1360 height=165 align="left" cellpadding="0" cellspacing="0">
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table width="1280" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <font face="calibri" size="5" color="#f7f036">
+          <a href="index.html">Home</a> | <a href="about.html">About</a> |  <a href="watermapping.html">Water Mapping</a> | <a href="inequality.html">Inequality</a> | <a href="data.html">Data</a> | <a href="downloads.html">Downloads</a> | <a href="contact.html">Contact</a>
+        </font>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table width="1280" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="left">
+        <h1>
+          <font face="calibri" size="5" color="#3943ce">
+            <B>Combining water point data and machine learning to predict the potential geographic distribution of disadvantaged drinking-water access</B>
+          </font>
+        </h1>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Although SDG monitoring on drinking-water progress is often based on national level indicators, sub-nationally and geospatially disaggregated indicators may become increasingly important as they could effectively reveal inequalities in services between different geographic locations and population groups. As more recent concerns are raised about issues such as water quality, functionality of facility, and continuity of service, it may also become increasingly important to disaggregate data by specific type of water service. As more geospatial data sources become available with the transition from the MDGs to the SDGs, predicting the potential spatial distribution of specific type(s) of drinking-water source using machine learning method becomes possible. DHS modelled surfaces as one of such novel data could potentially be the important sources of predictive covariates in modelling the potential distribution of specific type(s) of drinking-water access or service.
+          </font>
+        </body>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table width="1280" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="left">
+        <h1>
+          <font face="calibri" size="5" color="#3943ce">
+            <B>Example 1: Revealing inequalities in water and sanitation access by wealth</B>
+          </font>
+        </h1>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Method: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            The <a href="http://spatialdata.dhsprogram.com/modeled-surfaces/#">DHS modelled surfaces</a> allow indicators concerning drinking-water and sanitation access to be disaggregated geospatially, 
+            which therefore provides a potential to integragate WASH-related indicators with other geospatial data by matching the geographic locations. 
+            In this example, we derived 1km poverty data from the <a href="http://www.worldpop.org.uk/">Worldpop</a> dataset to overlay with the DHS drinking-water and sanitation surfaces; 
+            areas where over 50% of residents per grid square living in poverty defined by the <a href="http://www.ophi.org.uk/policy/multidimensional-poverty-index/">Multidimensional Poverty Index (MPI)</a> are considered as 'poor areas', 
+            whilst below 50% of residents per grid square living in MPI-defined poverty are considered as 'rich areas'.
+          </font>
+        </body>
+        <br>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Data: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Kenya: <br>
+            DHS modelled surfaces: (<a href="http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=KE">http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=KE</a>) <br>
+            Poverty map: (<a href="http://www.worldpop.org.uk/data/summary/?doi=10.5258/SOTON/WP00127">http://www.worldpop.org.uk/data/summary/?doi=10.5258/SOTON/WP00127</a>) <br>
+            Tanzania: <br>
+            DHS modelled surfaces: (<a href="http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=TZ">http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=TZ</a>) <br>
+            Poverty map: (<a href="http://www.worldpop.org.uk/data/summary/?doi=10.5258/SOTON/WP00290">http://www.worldpop.org.uk/data/summary/?doi=10.5258/SOTON/WP00290</a>) <br>
+          </font>
+        </body>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Results: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Kenya: <br>
+            <img src="https://s20.postimg.org/7ny38retp/KEN_Imp_Wat_Wealth.png" alt="KEN_ImpWat_Wealth" width=480 height=640 align="center" cellpadding="0" cellspacing="0">
+            <img src="https://s20.postimg.org/uw1k932dp/KEN_No_Sanit_Wealth.png" alt="KEN_NoSanit_Wealth" width=480 height=640 align="center" cellpadding="0" cellspacing="0"> <br>
+          </font>
+          <br>
+          <font face="calibri" size="4" color="#3943ce">
+            Tanzania: <br>
+            <img src="https://s20.postimg.org/g1cyuwsst/TZA_Imp_Wat_Wealth.png" alt="TZA_ImpWat_Wealth" width=480 height=640 align="left" cellpadding="0" cellspacing="0">
+            <img src="https://s20.postimg.org/40riu6le5/TZA_No_Sanit_Wealth.png" alt="TZA_NoSanit_Wealth" width=480 height=640 align="left" cellpadding="0" cellspacing="0">
+          </font>
+        </body>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table width="1280" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="left">
+        <h1>
+          <font face="calibri" size="5" color="#3943ce">
+            <B>Example 2: Revealing inequalities in water and sanitation access by subnational areal units</B>
+          </font>
+        </h1>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Method: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            The <a href="http://spatialdata.dhsprogram.com/modeled-surfaces/#">DHS modelled surfaces</a> inherently allow data to be spatially disaggregated.
+            By combining with subnational administrative boundaries, it is possible to reveal the difference in coverage between subnational areas and therefore provide a useful comparative measure of inequality in service.
+          </font>
+        </body>
+        <br>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Data: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Tanzania: <br>
+            DHS modelled surfaces: (<a href="http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=TZ">http://spatialdata.dhsprogram.com/modeled-surfaces/#countryId=TZ</a>) <br>
+            Administrative boundaries: (<a href="http://www.gadm.org/country">http://www.gadm.org/country</a>) <br>
+          </font>
+        </body>
+        <h2 align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            Results: 
+          </font>
+        </h2>
+        <body align="left">
+          <font face="calibri" size="4" color="#3943ce">
+            <img src="https://s20.postimg.org/3pa2hf4y5/TZA_Imp_Wat_Sub_Nation.png" alt="TZA_ImpWat_SubNation" width=480 height=640 align="left" cellpadding="0" cellspacing="0">
+            <img src="https://s20.postimg.org/qf97aeo5p/TZA_No_Sanit_Sub_Nation.png" alt="TZA_No_Sanit_SubNation" width=480 height=640 align="left" cellpadding="0" cellspacing="0">
+          </font>
+        </body>
+      </td>
+    </tr>
+  </table>
+  
+</html>
