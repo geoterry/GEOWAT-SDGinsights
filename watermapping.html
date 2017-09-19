@@ -47,16 +47,19 @@
             <B>CASE STUDY: Mapping the potential geographic distribution of surface water drinking sources in Liberia</B>
           </font>
         </h1>
-        <h2 align="left">
-          <font face="calibri" size="4" color="#3943ce">
-            Method: 
-          </font>
-        </h2>
         <body align="left">
           <font face="calibri" size="4" color="#3943ce">
-            In this example, we use a novel machine learning algorithm named maximum entropy (MaxEnt) to predict the potential spatial distribution of surface water drinking sources (drinking water directly from a river, dam, lake, pond, stream, canal or irrigation canal) defined by the <a href="https://washdata.org/monitoring/drinking-water">WHO/UNICEF Joint Monitoring Programme (JMP)</a> in Liberia. 
-            MaxEnt method is based on the maximum entropy principle, which suggests making prediction of the unknown probability distribution by looking for the probability distribution of maximum entropy (i.e. which is most diffused and closest to uniform distribution where the probability for each individual locality within the area of interests tends to be equally likely) bounded by the constraints derived from the obtained presence data (the coordinates of geographic locations where the target objects are observed) and the known environmental conditions across the area of interests. 
-            It has been widely applied in biological and ecological studies. Detailed methodological introduction of MaxEnt method can be found in previous study by <a href="http://www.sciencedirect.com/science/article/pii/S030438000500267X">Phillips et al. (2006)</a>. 
+            Achieving universal and equitable access to safe and affordable drinking water for all requires evidence-based assessments to identify the disadvantaged areas and prioritise those with the most needs accordingly. 
+            To facilitate drinking water infrastructure development to deliver safe and sustainable water services for all, 
+            it is necessary to locate the people still using disadvantaged water services across the country. 
+            Surface water at the bottom of WHO/UNICEF Joint Monitoring Programme (JMP)’s <a href="https://washdata.org/monitoring/drinking-water">water ladder</a> refers to drinking water directly from open sources such as a river, stream, lake, dam, pond, canal or irrigation channel. 
+            Fetching water from open sources may pick up contaminants and pathogens which may cause serious health effects. 
+            Although conventional geospatial datasets concerning drinking water services generally contain comparatively limited information on surface water sources, 
+            more newly released datasets combining machine learning predictive modelling methods makes it possible to predict the potential spatial distribution of specific types of disadvantaged water service such as surface water. <br>
+            
+            This study uses a novel machine learning algorithm named maximum entropy (MaxEnt) to predict the potential spatial distribution of surface water drinking sources in Liberia. 
+            Surface water point data derived from the Water Point Exchange are employed as observed occurrence sample of surface water; 
+            whilst data indicating factors that may be potentially important determinants of the spatial distribution of surface water drinking sources are used as predictive covariates for the MaxEnt modelling.
           </font>
         </body>
         <br>
