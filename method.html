@@ -2,7 +2,7 @@
   <head>
     <title>GEOWATER - Method</title>
   </head>
-  <body bgcolor="#9dc0f9">
+  <body bgcolor="#ffffff">
   <center>
   <table width="1280" align="left" cellpadding="0" cellspacing="0">
     <tr>
@@ -15,7 +15,7 @@
   <table width="1280" align="center" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center">
-        <font face="calibri" size="5" color="#f7f036">
+        <font face="calibri" size="5" color="#0a0977">
           <a href="index.html">Home</a> | <a href="about.html">About</a> |  <a href="case.html">Case Study</a> | <a href="method.html">Method</a> | <a href="downloads.html">Downloads</a> | <a href="contact.html">Contact</a>
         </font>
       </td>
@@ -26,13 +26,16 @@
     <tr>
       <td align="left">
         <h1>
-          <font face="calibri" size="5" color="#3943ce">
-            <B>Combining water point data and machine learning to predict the potential geographic distribution of disadvantaged drinking-water access</B>
+          <font face="calibri" size="5" color="#2aa8e0">
+            <B>Method</B>
           </font>
         </h1>
         <body align="left">
-          <font face="calibri" size="4" color="#3943ce">
-            Although SDG monitoring on drinking-water progress is often based on national level indicators, sub-nationally and geospatially disaggregated indicators may become increasingly important as they could effectively reveal inequalities in services between different geographic locations and population groups. As more recent concerns are raised about issues such as water quality, functionality of facility, and continuity of service, it may also become increasingly important to disaggregate data by specific type of water service. As more geospatial data sources become available with the transition from the MDGs to the SDGs, predicting the potential spatial distribution of specific type(s) of drinking-water source using machine learning method becomes possible. DHS modelled surfaces as one of such novel data could potentially be the important sources of predictive covariates in modelling the potential distribution of specific type(s) of drinking-water access or service.
+          <font face="calibri" size="4" color="#0a0977">
+            This study uses a novel machine learning algorithm named maximum entropy (MaxEnt) to predict the potential spatial distribution of surface water drinking sources in Liberia. 
+            Surface water point data derived from the Water Point Exchange are employed as observed occurrence sample of surface water; 
+            whilst data indicating factors that may be potentially important determinants of the spatial distribution of surface water drinking sources are used as predictive covariates for the MaxEnt modelling. 
+            More details about the methodology can be found at the download page
           </font>
         </body>
       </td>
@@ -42,39 +45,21 @@
   <table width="1280" align="center" cellpadding="0" cellspacing="0">
     <tr>
       <td align="left">
-        <h1>
-          <font face="calibri" size="5" color="#3943ce">
-            <B>CASE STUDY: Mapping the potential geographic distribution of surface water drinking sources in Liberia</B>
-          </font>
-        </h1>
-        <body align="left">
-          <font face="calibri" size="4" color="#3943ce">
-            Achieving universal and equitable access to safe and affordable drinking water for all requires evidence-based assessments to identify the disadvantaged areas and prioritise those with the most needs accordingly. 
-            To facilitate drinking water infrastructure development to deliver safe and sustainable water services for all, 
-            it is necessary to locate the people still using disadvantaged water services across the country. 
-            Surface water at the bottom of WHO/UNICEF Joint Monitoring Programme (JMP)’s <a href="https://washdata.org/monitoring/drinking-water">water ladder</a> refers to drinking water directly from open sources such as a river, stream, lake, dam, pond, canal or irrigation channel. 
-            Fetching water from open sources may pick up contaminants and pathogens; 
-            without proper treatment before use, it may cause serious health effects. 
-            Although conventional geospatial datasets concerning drinking water services generally contain comparatively limited information on surface water sources, 
-            more newly released datasets combining machine learning predictive modelling methods makes it possible to predict the potential spatial distribution of specific types of disadvantaged water service such as surface water. <br>
-          </font>
-        </body>
-        <br>
-        <body align="left">
-          <font face="calibri" size="4" color="#3943ce">
-            This study uses a novel machine learning algorithm named maximum entropy (MaxEnt) to predict the potential spatial distribution of surface water drinking sources in Liberia. 
-            Surface water point data derived from the Water Point Exchange are employed as observed occurrence sample of surface water; 
-            whilst data indicating factors that may be potentially important determinants of the spatial distribution of surface water drinking sources are used as predictive covariates for the MaxEnt modelling.
-            More details about the methodology can be found at the <a href="downloads.html">download page</a>.
-          </font>
-        </body>
         <h2 align="left">
-          <font face="calibri" size="4" color="#3943ce">
+          <font face="calibri" size="4" color="#2aa8e0">
             Model inputs: 
           </font>
         </h2>
         <body align="left">
-          <font face="calibri" size="4" color="#3943ce">
+          <font face="calibri" size="4" color="#0a0977">
+            In total, 59 water point data describing surface water sources derived from the Water Point Exchange are employed as the observed occurrence sample of surface water, 
+            which excluded duplicates and those located within a same 5km x 5km grid cell (to avoid introduce any duplicate to the model).
+            For predictive covariates, this study identified 10 factors that may be importance determinants of the spatial distribution of open source drinking water considering both the availability of surface water resources and socio-economic factors that may reflect the local demands and preferences. 
+            For example, Euclidean distance to inland water was calculate to reflect the availability of surface water resources; 
+            improved water source coverage was employed to indicate the potential demands on surface water; 
+            open defecation surface was used as a proxy of poverty indicator to reflect potential affordability of advanced water supply services. 
+            All predictive covariate layers were scaled down to 5km spatial resolution.
+            <br>
             <img src="LBR_inputs.png" alt="LBR_inputs" width=1018 height=720 align="center" cellpadding="0" cellspacing="0">
             <br>
             Top to bottom, left to right: (1) surface water sample (derived from <a href="https://www.waterpointdata.org/">WPDx</a>); (2) bias layer; (3) distance to inland water (derived from DCW); (4) elevation (derived from ASTER GDEM, product of NASA and METI); 
@@ -85,17 +70,22 @@
           </font>
         </body>
         <h2 align="left">
-          <font face="calibri" size="4" color="#3943ce">
-            Result: 
+          <font face="calibri" size="4" color="#2aa8e0">
+            Model building: 
           </font>
         </h2>
         <body align="center">
-          <font face="calibri" size="4" color="#3943ce">
-            The following maps show the 5km resolution predicted potential spatial distribution of surface water sources in Liberia. 
-            This is merely a simplified model for the illustration of this idea. 
-            A comparatively precise model can be conducted at finer resolution with sufficient geospatial data and a systematic conceptual framework identifying technical and socio-economic factors that may affect the distribution of specific water sources.
-            Surely, such prediction should not directly replace national scale water point inventory or nationally representative household surveys. 
-            However, it could give a brief indication of the likely spatial distribution of specific type of water sources in areas where data is lacking.
+          <font face="calibri" size="4" color="#0a0977">
+            For model building, 70% of the surface water presence points were randomly selected to train the model, 
+            whilst the remainder were set aside for testing the model performance. 
+            We generated 1,000 background points by randomly selecting points within the full spatial extent defined in Liberia (where large water bodies were excluded). 
+            We repeated the sampling of training and background points 50 times and then computed the aggregated prediction and performance analysis. 
+            Evaluation of model performance was carried out using Area Under the Receiver Operator Curve (AUC). 
+            An AUC value of 1 reflects perfect discriminatory power of the model; 
+            0.5 indicates that the prediction failed to capture any patterns and is no better than a random distribution; 
+            AUC above 0.75 indicates a potentially useful discrimination of the model. 
+            The MaxEnt model building was carried out using R with the MaxEnt package. 
+            The R code can be downloaded from <a href="case1_maxent_code.R" download>here</a>.
             <br>
             <img src="LBR_output1.png" alt="LBR_output1" width=480 height=640 align="center" cellpadding="0" cellspacing="0">
             <img src="LBR_output2.png" alt="LBR_output2" width=480 height=640 align="center" cellpadding="0" cellspacing="0"> <br>
